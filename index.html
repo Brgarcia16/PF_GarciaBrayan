@@ -9,43 +9,95 @@
   <title>Inicio</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <nav class="nav">
+    <div id="icono_menu" class="icono_menu">
+      <label for="menu-drop-checkbox">
+        <img src="Imagenes/MenuNav/menu_nav_responsive.png" alt="">
+      </label>
+    </div>
+    <input type="checkbox" class="icono_menu_checkbox" id="menu-drop-checkbox">
     <div class="nav__container">
+      <section class="section__logo">
+        <a href="index.html">
+          <h1 class="nav_title_first">BARBER SHOP</h1>
+          <img src="iconos/iconoInicio.png" class="icon_inicio" width="30px">
+        </a>
+      </section>
+      <section class="nav__sec">
+        <a href="#" class="nav__menu">
+          <img src="../iconos/userImg.png" class="nav__icons">
+        </a>
+        <a href="#" class="nav__menu">
+          <img src="iconos/carrito.png" class="nav__icons">
+        </a>
+      </section>
+      
+      <div class="headerMobile">
+        <h2 class="title__mobile">Inicio</h2>
+        <div class="nav__icon">
+          <i class="fa-solid fa-user" id="perfil__user">Perfil</i>
+        </div>
+      </div>
 
-      <a href="index.html">
-        <h1 class="nav_title_first">BARBER SHOP</h1>
-        <img src="iconos/iconoInicio.png" class="icon_inicio" width="30px">
-      </a>
+      
+      <div class="contenedorGenerico">
+        <ul class="menu-drop" id="menu-drop">
+          <li class="item">
+            <i class="fa-solid fa-house fa-xl" id="icono_img"></i>
+            <a href="index.html" class="item">
+              Home
+            </a>
+          </li>
+          <li class="item">
+            <i class="fa-solid fa-folder fa-xl" id="icono_img"></i>
+            <a href="pages/productos.html" class="item">
+              Productos
+            </a>
+          </li>
+          <li class="item">
+            <i class="fa-solid fa-calendar fa-xl" id="icono_img"></i>
+            <a href="pages/agenda.html" class="item">
+              Agenda
+            </a>
+          </li>
+          <li class="itemMobile">
+            <i class="fa-sharp fa-solid fa-phone fa-xl" id="icono_img"></i>
+            <a href="#" class="item">
+              Contacto
+            </a>
+          </li>
+          <li class="itemMobile">
+            <i class="fa-solid fa-user-group fa-xl" id="icono_img"></i>
+            <a href="#" class="item">
+              Personal
+            </a>
+          </li>
+          <li class="itemMobile">
+            <i class="fa-solid fa-gears fa-xl" id="icono_img"></i>
+            <a href="#" class="item">
+              Configuracion
+            </a>
+          </li>
+          <li class="itemMobile-Salir">
+            <i class="fa-solid fa-right-from-bracket fa-2xl" id="icono_img"></i>
+            <a href="#" class="item">
+              Salir
+            </a>
+          </li>
+          
+        </ul>
+      </div>
 
-      <a href="#" class="nav__menu">
-        <img src="iconos/userImg.png" class="nav__icon">
-      </a>
-      <ul class="menu-drop" id="menu">
-        <a href="index.html" class="item">
-          <img src="iconos/inicio.png" clas="drop_icon" width="30px">
-          <span class="drop_span">Inicio</span>
-        </a>
-        <a href="pages/productos.html" class="item">
-          <img src="iconos/productos.png" clas="drop_icon" width="30px">
-          <span class="drop_span">Productos</span>
-        </a>
-        <a href="pages/agenda.html" class="item">
-          <img src="iconos/agenda.png" clas="drop_icon" width="30px">
-          <span class="drop_span">Agenda</span>
-        </a>
-        <a href="#" class="item">
-          <img src="iconos/carrito.png" class="nav__icon_card">
-        </a>
-      </ul>
 
     </div>
   </nav>
 
-   <div class="contenedorGenerico1">
+  <div class="contenedorGenerico1">
     <div class="container-slider">
       <div class="row">
         <div class="col-sm-12">
@@ -82,7 +134,7 @@
     </div>
   </div>
 
-  
+
   <div class="container text-center" id="containertitlecard">
     <hr>
     <div class="row align.items-end">
@@ -106,90 +158,59 @@
         <p>Primero</p>
         <p>Primero</p>
       </div>
-      <div class="col-sm-4"  id="columcard">
+      <div class="col-sm-4" id="columcard">
         Column
       </div>
-      <div class="col-sm-4"  id="columcard">
+      <div class="col-sm-4" id="columcard">
         Column
       </div>
     </div>
   </div>
 
 
-  <!-- <div id="icono_menu" class="icono_menu">
-        <label for="id_checkbox">
-          <img src="Imagenes/MenuNav/menu_nav_responsive.png" alt="">
-        </label>
-      </div> -->
+
   <!-- <div class="img_carrito">
             <img src="iconos/carrito.png" alt="Carrito">
-        </div> -->
-
-
-  <!-- <input type="checkbox" class="icono_menu_checkbox" id="id_checkbox"> -->
-  <!-- <ul id="menu-items" class="menu-items">
-        <li class="item"><a href="./index.html">Inicio</a></li>
-        <li class="item"><a href="./pages/productos.html">Productos</a></li>
-        <li class="item"><a href="./pages/agenda.html">Agenda</a></li>
-        <li class="item"><a href="#">Contacto</a></li>
-        
-        <a href="#menuUser" class="menu_img">
-          <img src="iconos/iconoUser.png" alt="">
-        </a>
-        <ul id="menu-item_user" class="menu-item_user"> 
-          <li class="itemUser"><a href="./pages/login.html">Login/Register</a></li>
-          <li class="itemUser"><a href="#">Logout</a></li>
-        </ul>
-        <li class="itemMobile"><a href="#">Personal</a></li>
-        <li class="itemMobile"><a href="#">Configuracion</a></li>
-      </ul> -->
+  </div> -->
 
 
 
-  <!-- <a href="index.html" class="logo">
-        <img src="iconos/iconoInicio.png" alt="Logo Principal">
-        <h1 class="display-6">BarberShop</h1>
+
+  <div class="footerContainer">
+    <div class="footerRedesSociales">
+      <p>Redes Sociales</p>
+    </div>
+    <div class="socialIcons">
+      <a href="">
+        <img src="iconos/facebook.png" alt="">
       </a>
-      <a href="#" class="carrito">
-        <img src="iconos/carrito.png" alt="Carrito compra">
-      </a> -->
-
-
-      <div class="footerContainer">
-        <div class="footerRedesSociales">
-          <p>Redes Sociales</p>
-        </div>
-          <div class="socialIcons">
-              <a href="">
-                <img src="iconos/facebook.png" alt="">
-              </a>
-              <a href="">
-                <img src="iconos/instagram.png" alt="">
-              </a>
-              <a href="">
-                <img src="iconos/tic toc.png" alt="">
-              </a>      
-              <a href="">
-                <img src="iconos/contact.png" alt="">
-              </a>          
-          </div>
-          <div class="nav-footer">
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Noticias</a></li>
-              <li><a href="">Contacto</a></li>
-              <li><a href="">Nuestro equipo</a></li>
-            </ul>
-          </div>
-          <div class="footerCopy">
-              <p>Copyright 2023; Designed by <span class="designer">Brayan Garcia</span> </p>
-          </div>
-      </div>
+      <a href="">
+        <img src="iconos/instagram.png" alt="">
+      </a>
+      <a href="">
+        <img src="iconos/tic toc.png" alt="">
+      </a>
+      <a href="">
+        <img src="iconos/contact.png" alt="">
+      </a>
+    </div>
+    <div class="nav-footer">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Noticias</a></li>
+        <li><a href="">Contacto</a></li>
+        <li><a href="">Nuestro equipo</a></li>
+      </ul>
+    </div>
+    <div class="footerCopy">
+      <p>Copyright 2023; Designed by <span class="designer">Brayan Garcia</span> </p>
+    </div>
+  </div>
 
 
 
 
-  
+
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
