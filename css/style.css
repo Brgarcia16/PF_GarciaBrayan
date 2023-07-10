@@ -1,8 +1,8 @@
 body {
     margin: 3px;
-    background-color: rgb(143, 178, 218);
+    background-color: rgba(11, 26, 44, 0.986);
     font-family: Arial, Helvetica, sans-serif;
-
+    list-style: none;
 }
 
 
@@ -45,8 +45,6 @@ body {
     position: relative;
     top: 10px;
     z-index: 10;
-
-    /* transform: var(--img1); */
 }
 
 
@@ -54,10 +52,12 @@ body {
     transform: var(--img2);
 }
 
-.nav__icons {
-    /* filter: invert(0); */
-    /* width: 40px; */
-    width: 45px;
+.nav__icon_profile {
+    width: 34px;
+}
+
+.nav__icon_card {
+    width: 51px;
     padding-right: 10px;
 }
 
@@ -89,7 +89,31 @@ a {
 }
 
 
+.contianerGeneric {
+    height: 900px;
+    background-color: black;
+    position: relative;
+}
 
+#row__container {
+    position: absolute;
+    padding-top: 150px;
+}
+
+.card-body {
+    background-color: #8dabd1;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    background-color: transparent
+}
+
+.card img {
+    height: 40vh;
+}
 
 
 .drop_span {
@@ -101,28 +125,57 @@ a {
 }
 
 #containerCard {
-    gap: 5rem;
-    justify-content: center;
+    gap: 7rem;
+    box-shadow: 0px 1px 10px;
+    cursor: default;
 }
 
-#columcard {
+#containerCard ul li {
+    font-size: 20px;
+    list-style-type: disc;
+    text-align: start;
+}
+
+#columcard,
+#columcardService,
+#columcardHoras {
     border-radius: 1rem;
     background-color: gray;
     height: 453px;
     width: 356px;
 }
 
-.text-center {
-    background-color: transparent;
-    margin: 10%;
+#columcard p,
+#descripcionTitle p,
+#columcardService p,
+#columcardHoras p {
+    color: white;
 }
 
 
 
 
+.card_more_info {
+    width: 90px;
+}
 
 
-/* Agendas */
+/* Agenda */
+
+.container__agenda {
+    background-color: rgb(179, 203, 206);
+    width: 100%;
+    height: 700px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex: 1;
+}
+
+.title_agenda, .title_agenda_1 {
+    font-size: 40px;
+}
+
 .containerAgenda {
     background-color: gray;
     display: grid;
@@ -133,32 +186,52 @@ a {
     z-index: 1;
 }
 
-.containerCalendar {
-    text-align: center;
+.section-input_text input {
+    width: 400px;
+    height: 40px;
+}
+
+.section-input_tex,
+.combobox__time,
+.combobox__location {
+    width: 400px;
+    height: 40px;
+    background-color: transparent;
+    box-shadow: none;
+    border: 0 !important;
+    cursor: pointer;
+}
+
+.agenda_user {
+    top: 155px;
     position: relative;
-    /* background-color: white; */
-    border-radius: 10px;
+    width: 600px;
+    height: 388px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
 }
 
-
-#containerCenterCard {
-    background-color: rgb(179, 203, 206);
-    width: 1100px;
-    height: 514px;
+.agenda_user .combobox {
+    width: 100px;
 }
 
+.calendar {
+    top: 155px;
+    position: relative;
+    background-color: transparent;
+    width: 600px;
+    height: 388px;
+    display: grid;
+}
 
 .titleMesAnio {
     font-size: 25px;
 }
 
-.calendar {
-    background-color: aliceblue;
-    width: 500px;
-    height: 250px;
-    display: grid;
-    margin: 50px;
-}
+
 
 .day-name {
     background-color: gray;
@@ -180,8 +253,60 @@ a {
 }
 
 
-/* Agenda */
+.containerCalendar {
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
 
+
+.container__confirm {
+    position: relative;
+    left: 95px;
+    top: 36px;
+}
+
+.field_group {
+    position: relative;
+    width: 400px;
+}
+
+.input-field {
+    width: 100%;
+    outline: 0;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding-left: 60px;
+    background: transparent;
+    font-size: 1rem;
+    color: rgb(19, 16, 16);
+}
+
+.input-field:focus {
+    color: #ffff;
+    border-color: #ffff;
+}
+
+.input-field:focus~.icon {
+    color: #ffff;
+}
+
+.icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    align-items: center;
+}
+
+
+
+
+/* termina css agenda */
 
 
 /* Comienza el footer */
@@ -195,7 +320,6 @@ a {
 
 .footerContainer {
     background-color: rgb(3, 18, 24);
-
 }
 
 .socialIcons img {
@@ -264,8 +388,10 @@ img {
     top: 1rem;
     cursor: pointer;
     position: absolute;
+    border-radius: 3rem;
     width: 40px;
     z-index: 1;
+    left: 20px;
 }
 
 
@@ -305,6 +431,122 @@ a {
     top: 22px;
 }
 
+/* LoginYRegistro */
+
+/* estilos de login y registro */
+.backgroundScreen {
+    /*Carga una img del background. Lo pongo de esta manera para que me quede de fonde de los demas atributos.*/
+    background-image: url('../Imagenes/Login/fondo2.jpg');
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-size: cover;
+}
+
+.recuperarPass {
+    text-decoration: none;
+}
+
+.formLogin {
+    height: 500px;
+    width: 700px;
+    background-color: hsla(193, 54%, 7%, 0.438);
+
+    margin: auto;
+    margin-top: 200px;
+    padding: 140px 4cm;
+    border-top: 0px solid rgb(0, 0, 5);
+    color: #01080e;
+    font-family: 'Beau';
+}
+
+
+.formLogin h1 {
+    margin: 1px;
+    text-align: center;
+    height: 11px;
+    margin-bottom: 30px;
+    border-bottom: 1;
+}
+
+.cuentaExistente {
+    padding-top: 17px;
+    top: 10;
+    padding-left: 142px;
+}
+
+.formLogin .recuperarPass {
+    color: #11273a;
+    height: 76px;
+    text-align: center;
+    padding: 33PX;
+}
+
+.formLogin p {
+    color: #0f1318;
+    height: 76px;
+    text-align: center;
+    padding: 33PX;
+    border-bottom: 1px solid white;
+}
+
+.formLogin a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px
+}
+
+.formLogin a:hover {
+    text-decoration: underline;
+}
+
+.controls {
+    width: 400px;
+    border: 1px red;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    padding-left: 34px;
+    background: #072d4d67;
+    color: white;
+}
+
+
+
+
+
+/* #user {
+    background-image: url("../Imagenes/Login/iconoUser.png");
+    background-position: 3px;
+    background-size: 28px;
+    background-repeat: no-repeat;
+  }
+  
+  #password {
+    background-image: url("../Imagenes/Login/iconoPassword.png");
+    background-position: 3px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+  }
+  
+  #email {
+    background-image: url("../Imagenes/Login/icono_email.png");
+    background-position: 3px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+  } */
+
+.buttons {
+    width: 200px;
+    height: 30px;
+    margin-left: 110px;
+    background: #072d4d67;
+    border: none;
+    color: white;
+}
+
 
 
 .menu-drop--show {
@@ -313,6 +555,10 @@ a {
 
 .icono_menu_checkbox:checked+.nav__container {
     transform: translate(0);
+}
+
+.icono_menu_checkbox:checked+.containerCalendar {
+    display: block;
 }
 
 .icono_menu_checkbox {
@@ -330,6 +576,7 @@ a {
     }
 }
 
+
 @media screen and (max-width: 375px),
 (max-width: 412px) {
     .nav__container {
@@ -343,110 +590,177 @@ a {
         position: absolute;
         top: 0;
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
         justify-content: center;
-        /* background-color: aqua; */
         width: 100vw;
         height: 100px;
+        left: 146px;
     }
 
     .title__mobile {
         font-size: 20px;
         position: absolute;
-        top: 40px;
+        top: 43px;
+        color: white;
     }
 
-    #perfil__user {
+    .perfil__user {
         left: 100px;
         position: absolute;
-        top: 43px;
-
+        top: 44px;
+        cursor: pointer;
     }
 
     #user__picture {
         font-size: 10px;
         order: 2;
     }
-}
 
-@media screen and (max-width: 375px),
-(max-width: 412px) {
-    .menu-drop {
-        width: 100vw;
+    /* Agenda mobile */
+    .container__agenda {
+        background-color: #8dabd1;
+        border-radius: 3rem;
         height: 100vh;
-        top: 75px;
+        position: absolute;
         display: flex;
+        top: 0;
         flex-direction: column;
-        margin: 0;
-        left: 94px;
-        text-align: start;
-        gap: 60px;
-        width: 250px;
+        overflow: scroll;
     }
 
-    .contenedorGenerico {
+    .calendar {
+        position: relative;
+        top: 155px;
+        width: 100%;
+    }
+
+    .container_register {
+        position: relative;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        top: -43px;
+        width: 100%;
     }
 
-    .itemMobile,
-    .item,
-    .itemMobile-Salir {
-        color: #01070a;
-        list-style: none;
+    .field_group,
+    .combobox__time,
+    .combobox__location {
+        width: 208px;
     }
 
-    .itemMobile-Salir {
-        padding-top: 50px;
-        padding-left: 25px;
-    }
-
-    #icono_img {
-        width: 30px;
-    }
-
-    .item a,
-    .itemMobile a {
-        color: aliceblue;
-    }
-
-    .nav_title_first,
-    .icon_inicio {
+    .container__confirm #button__desktop, .title_agenda {
         display: none;
     }
 
-}
+    #button__mobile {
+        position: absolute;
+        right: 48px;
+        top: -10px;
+    }
 
-@media screen and (min-width: 428px) {
+    @media screen and (max-width: 375px),
+    (max-width: 412px) {
+        .menu-drop {
+            width: 100vw;
+            height: 100vh;
+            top: 75px;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            left: 94px;
+            text-align: start;
+            gap: 60px;
+            width: 250px;
+        }
 
-    .itemMobile,
-    .itemMobile-Salir,
-    .TitleMobile,.headerMobile {
-        display: none;
+        .contenedorGenerico {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .itemMobile,
+        .item,
+        .itemMobile-Salir {
+            color: #01070a;
+            list-style: none;
+        }
+
+        .itemMobile-Salir {
+            padding-top: 50px;
+            padding-left: 25px;
+        }
+
+        #icono_img {
+            width: 30px;
+        }
+
+        .item a,
+        .perfil__user a,
+        .itemMobile a {
+            color: aliceblue;
+        }
+
+        .nav_title_first,
+        .icon_inicio {
+            display: none;
+        }
     }
 }
-
-@media screen and (max-width:579px) {
-    .nav-footer ul {
-        align-items: center;
-        flex-direction: column;
+    @media screen and (min-width: 428px) {
+        .itemMobile,
+        .itemMobile-Salir,
+        .TitleMobile,
+        .headerMobile, #button__mobile {
+            display: none;
+        }
     }
-}
 
-@media screen and (max-width:500px) {
-    .footerContainer {
-        display: none;
+    @media screen and (max-width:579px) {
+        .nav-footer ul {
+            align-items: center;
+            flex-direction: column;
+        }
     }
-}
 
-
-@media screen and (max-width:500px) {
-
-    .contenedorGenerico1,
-    .text-center {
-        display: none;
+    @media screen and (max-width:500px) {
+        .footerContainer {
+            display: none;
+        }
     }
-}
 
-/* Termina Footer */
+
+    @media screen and (max-width:500px) {
+
+        .contianerGeneric,
+        .text-center,
+        .nav__sec {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:976px) {
+
+        hr,
+        #row_direction {
+            display: none;
+        }
+    }
+
+
+
+
+    #containertitlecard {
+        position: relative;
+        top: 50px;
+    }
+
+    #containertitlecard hr {
+        color: white;
+    }
+
+    #id_card_info {
+        position: relative;
+        top: -50px;
+    }
+
+    /* Termina Footer */

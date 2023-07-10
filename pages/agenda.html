@@ -1,160 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
+  <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="../iconos/agenda.png" type="image/x-icon">
   <title>Agenda</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <nav class="nav">
+    <div id="icono_menu" class="icono_menu">
+      <label for="menu-drop-checkbox">
+        <img src="../Imagenes/MenuNav/menu_nav_responsive.png" alt="">
+      </label>
+    </div>
+    <input type="checkbox" class="icono_menu_checkbox" id="menu-drop-checkbox">
     <div class="nav__container">
-
-      <a href="../index.html">
-        <h1 class="nav_title_first">BARBER SHOP</h1>
-        <img src="../iconos/iconoInicio.png" class="icon_inicio" width="30px">
-      </a>
-
-      <a href="#" class="nav__menu">
-        <img src="../iconos/userImg.png" class="nav__icon">
-      </a>
-      <ul class="menu-drop" id="menu">
-        <a href="../index.html" class="item">
-          <img src="../iconos/inicio.png" clas="drop_icon" width="30px">
-          <span class="drop_span">Inicio</span>
+      <section class="section__logo">
+        <a href="../index.html">
+          <h1 class="nav_title_first">BARBER SHOP</h1>
+          <img src="../iconos/iconoInicio.png" class="icon_inicio" width="30px">
         </a>
-        <a href="pages/productos.html" class="item">
-          <img src="../iconos/productos.png" clas="drop_icon" width="30px">
-          <span class="drop_span">Productos</span>
+      </section>
+      <section class="nav__sec">
+        <a href="#" class="nav__menu">
+          <img src="../iconos/userImg.png" class="nav__icon_profile">
         </a>
-        <a href="pages/agenda.html" class="item">
-          <img src="../iconos/agenda.png" clas="drop_icon" width="30px">
-          <span class="drop_span">Agenda</span>
-        </a>
-        <a href="#" class="item">
+        <a href="#" class="nav__menu">
           <img src="../iconos/carrito.png" class="nav__icon_card">
         </a>
-      </ul>
+      </section>
+
+      <div class="headerMobile">
+        <h2 class="title__mobile">Inicio</h2>
+        <div class="perfil__user">
+          <i class="fa-solid fa-user" style="color: #000000;" ></i>
+          <a href="../index.html">
+            Perfil
+          </a>
+        </div>
+      </div>
+
+      <div class="contenedorGenerico">
+        <ul class="menu-drop" id="menu-drop">
+          <li class="item">
+            <i class="fa-solid fa-house fa-xl" id="icono_img"></i>
+            <a href="../index.html" class="item">
+              Home
+            </a>
+          </li>
+          <li class="item">
+            <i class="fa-solid fa-folder fa-xl" id="icono_img"></i>
+            <a href="productos.html" class="item">
+              Productos
+            </a>
+          </li>
+          <li class="item">
+            <i class="fa-solid fa-calendar fa-xl" id="icono_img"></i>
+            <a href="../pages/agenda.html" class="item">
+              Agenda
+            </a>
+          </li>
+          <li class="itemMobile">
+            <i class="fa-sharp fa-solid fa-phone fa-xl" id="icono_img"></i>
+            <a href="#" class="item">
+              Contacto
+            </a>
+          </li>
+          <li class="itemMobile">
+            <i class="fa-solid fa-user-group fa-xl" id="icono_img"></i>
+            <a href="#" class="item">
+              Personal
+            </a>
+          </li>
+          <li class="itemMobile">
+            <i class="fa-solid fa-gears fa-xl" id="icono_img"></i>
+            <a href="#" class="item">
+              Configuracion
+            </a>
+          </li>
+          <li class="itemMobile-Salir">
+            <i class="fa-solid fa-right-from-bracket fa-2xl" id="icono_img"></i>
+            <a href="#" class="item">
+              Salir
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
 
     </div>
   </nav>
 
 
-  <div class="container text-center" id="containerCenterCard">
-    <div class="row align.items-end">
-      <div class="col-sm-6">
-        <div class="containerCalendar">
-          <div class="calendar">
-            <h1>Seleccione un Dia</h1>
-            <ol>
-               <li>Lun</li>
-               <li>Mar</li>
-               <li>Mier</li>
-               <li>Juev</li>
-               <li>Vier</li>
-               <li>Saba</li>
-               <li>Dom</li>
-            </ol>
-            <ol>
-             <li class="firsDay">1</li>
-             <li>2</li>
-             <li>3</li>
-             <li>4</li>
-             <li>5</li>
-             <li>6</li>
-             <li>7</li>
-             <li>8</li>
-             <li>9</li>
-             <li>10</li>
-             <li>11</li>
-             <li>12</li>
-             <li>13</li>
-             <li>14</li>
-             <li>15</li>
-             <li>16</li>
-             <li>17</li>
-             <li>18</li>
-             <li>19</li>
-             <li>20</li>
-             <li>21</li>
-             <li>22</li>
-             <li>23</li>
-             <li>24</li>
-             <li>25</li>
-             <li>26</li>
-             <li>27</li>
-             <li>28</li>
-             <li>29</li>
-             <li>30</li>
-             <li>31</li>
-           </ol>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        Column
+
+
+
+  <div class="container__agenda">
+    <div class="containerCalendar">
+      <div class="calendar">
+        <h1 class="title_agenda_1">Seleccione un Dia</h1>
+        <ol>
+          <li>Lun</li>
+          <li>Mar</li>
+          <li>Mier</li>
+          <li>Juev</li>
+          <li>Vier</li>
+          <li>Saba</li>
+          <li>Dom</li>
+        </ol>
+        <ol>
+          <li class="firsDay">1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+          <li>11</li>
+          <li>12</li>
+          <li>13</li>
+          <li>14</li>
+          <li>15</li>
+          <li>16</li>
+          <li>17</li>
+          <li>18</li>
+          <li>19</li>
+          <li>20</li>
+          <li>21</li>
+          <li>22</li>
+          <li>23</li>
+          <li>24</li>
+          <li>25</li>
+          <li>26</li>
+          <li>27</li>
+          <li>28</li>
+          <li>29</li>
+          <li>30</li>
+          <li>31</li>
+        </ol>
       </div>
     </div>
-  </div>
-
-
-  <!-- <div class="containerAgenda">
-    <div class="containerCalendar">
-        <div class="calendar">
-          <section class="title"><p>Seleccione un dia</p></section>
-          <h1 class="titleMesAnio">Julio 2023</h1>
-          <ol>
-            <li class="day-name">Lun</li>
-            <li class="day-name">Mar</li>
-            <li class="day-name">Mier</li>
-            <li class="day-name">Juev</li>
-            <li class="day-name">Vier</li>
-            <li class="day-name">Saba</li>
-            <li class="day-name">Dom</li>
-          </ol>
-          <ol>
-            <li class="firsDay">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-            <li>11</li>
-            <li>12</li>
-            <li>13</li>
-            <li>14</li>
-            <li>15</li>
-            <li>16</li>
-            <li>17</li>
-            <li>18</li>
-            <li>19</li>
-            <li>20</li>
-            <li>21</li>
-            <li>22</li>
-            <li>23</li>
-            <li>24</li>
-            <li>25</li>
-            <li>26</li>
-            <li>27</li>
-            <li>28</li>
-            <li>29</li>
-            <li>30</li>
-            <li>31</li>
-          </ol>
+    <div class="container_register">
+      <div class="agenda_user">
+        <h2 class="title_agenda">Ingresar Datos</h2>
+        <div class="field_group">
+          <input   type="text" class="input-field" placeholder="Ingresar Nombre" autocomplete="off">
+          <div class="icon">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
         </div>
-          
-    </div> -->
+        <div class="field_group">
+          <input   type="text" class="input-field" placeholder="Ingresar Apellido" autocomplete="off">
+          <div class="icon">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+        </div>
+        </section>
+        <select class="combobox__time">
+          <option selected disabled>Seleccionar una hora</option>
+          <option value="opcion2">09:00</option>
+          <option value="opcion3">10:00</option>
+          <option value="opcion4">12:00</option>
+        </select>
+        <select class="combobox__location">
+          <option selected disabled>Seleccionar un local</option>
+          <option value="opcion1">Local 1</option>
+          <option value="opcion2">Local 2</option>
+        </select>
+
+        <div class="container__confirm">
+          <button type="button" class="btn btn-primary" id="button__desktop">
+            Limpar Datos
+          </button>
+          <button type="button" class="btn btn-success" id="button__desktop">
+            Aceptar
+          </button>
+          <button type="button" class="btn btn-success" id="button__mobile">
+            Reservar
+          </button>
+        </div>
+
+      </div>
+    </div>
 
   </div>
+
 
 
 
@@ -188,6 +229,7 @@
       <p>Copyright 2023; Designed by <span class="designer">Brayan Garcia</span> </p>
     </div>
   </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
