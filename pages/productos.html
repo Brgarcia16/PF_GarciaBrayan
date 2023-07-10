@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -11,11 +12,12 @@
   <link rel="stylesheet" href="../css/style.css">
   <script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <nav class="nav">
     <div id="icono_menu" class="icono_menu">
       <label for="menu-drop-checkbox">
-        <img src="Imagenes/MenuNav/menu_nav_responsive.png" alt="">
+        <img src="../Imagenes/MenuNav/menu_nav_responsive.png" alt="">
       </label>
     </div>
     <input type="checkbox" class="icono_menu_checkbox" id="menu-drop-checkbox">
@@ -37,11 +39,13 @@
 
       <div class="headerMobile">
         <h2 class="title__mobile">Inicio</h2>
-        <div class="nav__icon">
-          <i class="fa-solid fa-user" id="perfil__user">Perfil</i>
+        <div class="perfil__user">
+          <i class="fa-solid fa-user" style="color: #000000;" ></i>
+          <a href="../index.html">
+            Perfil
+          </a>
         </div>
       </div>
-
 
       <div class="contenedorGenerico">
         <ul class="menu-drop" id="menu-drop">
@@ -53,13 +57,13 @@
           </li>
           <li class="item">
             <i class="fa-solid fa-folder fa-xl" id="icono_img"></i>
-            <a href="pages/productos.html" class="item">
+            <a href="productos.html" class="item">
               Productos
             </a>
           </li>
           <li class="item">
             <i class="fa-solid fa-calendar fa-xl" id="icono_img"></i>
-            <a href="agenda.html" class="item">
+            <a href="../pages/agenda.html" class="item">
               Agenda
             </a>
           </li>
@@ -94,5 +98,176 @@
 
     </div>
   </nav>
+  <div class="container">
+    <div class="header">
+      <h1>Productos</h1>
+    </div>
+    <div class="search_product">
+      <input type="text" name="buscar_texto" placeholder="Buscar producto">
+      <a href="#">
+        <i class="fa-solid fa-magnifying-glass" id="icon_search"></i>
+      </a>
+    </div>
+    <div class="products">
+      <div class="product">
+        <div class="image">
+          <img src="../Imagenes/Productos/productos_uno.jpg" alt="">
+        </div>
+        <div class="namePrice">
+          <h3>Capa de corte de cabello profesional</h3>
+          <span>$15.99</span>
+        </div>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="button_comprar">
+          <button>Comprar ahora</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="image">
+          <img src="../Imagenes/Productos/imagen_2.jpg" alt="">
+        </div>
+        <div class="namePrice">
+          <h3>Kit de recorte de barba recargable</h3>
+          <span>$ 120.99</span>
+        </div>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="button_comprar">
+          <button>Comprar ahora</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="image">
+          <img src="../Imagenes/Productos/imagen_3.jpg" alt="">
+        </div>
+        <div class="namePrice">
+          <h3>Corta pelos para hombres</h3>
+          <span>$150.99</span>
+        </div>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="button_comprar">
+          <button>Comprar ahora</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="image">
+          <img src="../Imagenes/Productos/imagen_4.jpg" alt="">
+        </div>
+        <div class="namePrice">
+          <h3>ZIBARBER Botella de spray vacia</h3>
+          <span>$20.99</span>
+        </div>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="button_comprar">
+          <button>Comprar ahora</button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="image">
+          <img src="../Imagenes/Productos/imgen_5.jpg" alt="">
+        </div>
+        <div class="namePrice">
+          <h3>ZIBARBER Botella de spray vacia</h3>
+          <span>$20.99</span>
+        </div>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="button_comprar">
+          <button>Comprar ahora</button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="image">
+          <img src="../Imagenes/Productos/imagen_6.jpg" alt="">
+        </div>
+        <div class="namePrice">
+          <h3>ZIBARBER Botella de spray vacia</h3>
+          <span>$20.99</span>
+        </div>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="button_comprar">
+          <button>Comprar ahora</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footerContainer">
+    <div class="footerRedesSociales">
+      <p>Redes Sociales</p>
+    </div>
+    <div class="socialIcons">
+      <a href="">
+        <img src="../iconos/facebook.png" alt="">
+      </a>
+      <a href="">
+        <img src="../iconos/instagram.png" alt="">
+      </a>
+      <a href="">
+        <img src="../iconos/tic toc.png" alt="">
+      </a>
+      <a href="">
+        <img src="../iconos/contact.png" alt="">
+      </a>
+    </div>
+    <div class="nav-footer">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Nuestro equipo</a></li>
+      </ul>
+    </div>
+    <div class="footerCopy">
+      <p>Copyright 2023; Designed by <span class="designer">Brayan Garcia</span> </p>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

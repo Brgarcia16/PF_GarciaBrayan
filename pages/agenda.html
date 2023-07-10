@@ -101,8 +101,6 @@
 
 
 
-
-
   <div class="container__agenda">
     <div class="containerCalendar">
       <div class="calendar">
@@ -155,7 +153,7 @@
       <div class="agenda_user">
         <h2 class="title_agenda">Ingresar Datos</h2>
         <div class="field_group">
-          <input   type="text" class="input-field" placeholder="Ingresar Nombre" autocomplete="off">
+          <input type="text" class="input-field" placeholder="Ingresar Nombre" autocomplete="off">
           <div class="icon">
             <i class="fa fa-user" aria-hidden="true"></i>
           </div>
@@ -169,14 +167,19 @@
         </section>
         <select class="combobox__time">
           <option selected disabled>Seleccionar una hora</option>
-          <option value="opcion2">09:00</option>
-          <option value="opcion3">10:00</option>
-          <option value="opcion4">12:00</option>
+          <option value="opcion2">09:00 - 10:00 AM</option>
+          <option value="opcion3">10:00 - 11:00 AM</option>
+          <option value="opcion3">11:00 - 12:00 AM</option>
+          <option value="opcion4">12:00 - 13:00 AM</option>
+          <option value="opcion4">14:00 - 15:00 AM</option>
+          <option value="opcion4">15:00 - 16:00 AM</option>
+          <option value="opcion4">17:00 - 18:00 AM</option>
         </select>
         <select class="combobox__location">
           <option selected disabled>Seleccionar un local</option>
           <option value="opcion1">Local 1</option>
           <option value="opcion2">Local 2</option>
+          <option value="opcion2">Local 3</option>
         </select>
 
         <div class="container__confirm">
@@ -186,9 +189,14 @@
           <button type="button" class="btn btn-success" id="button__desktop">
             Aceptar
           </button>
-          <button type="button" class="btn btn-success" id="button__mobile">
+          <button type="button" class="btn btn-success" id="button__mobile_reservar">
             Reservar
           </button>
+          <a href="../index.html">
+            <button type="button" class="btn btn-success" id="button__mobile_volver">
+              Volver
+            </button>
+          </a>
         </div>
 
       </div>
@@ -214,7 +222,7 @@
         <img src="../iconos/tic toc.png" alt="">
       </a>
       <a href="">
-        <img src="iconos/contact.png" alt="">
+        <img src="../iconos/contact.png" alt="">
       </a>
     </div>
     <div class="nav-footer">
