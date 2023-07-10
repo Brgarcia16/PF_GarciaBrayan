@@ -587,7 +587,7 @@ a {
 
 
 @media screen and (max-width: 375px),
-(max-width: 412px) {
+(max-width: 430px) {
     .nav__container {
         width: 100vw;
         height: 100vh;
@@ -680,7 +680,7 @@ a {
     }
 
     @media screen and (max-width: 375px),
-    (max-width: 412px) {
+    (max-width: 428px)  {
         .menu-drop {
             width: 100vw;
             height: 100vh;
@@ -723,14 +723,13 @@ a {
         }
 
         .nav_title_first,
-        .icon_inicio {
+        .icon_inicio, .carousel__container {
             display: none;
         }
     }
 }
 
-@media screen and (min-width: 428px) {
-
+@media screen and (min-width: 810px) {
     .itemMobile,
     .itemMobile-Salir,
     .TitleMobile,
