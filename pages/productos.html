@@ -17,19 +17,19 @@
   <nav class="nav">
     <div id="icono_menu" class="icono_menu">
       <label for="menu-drop-checkbox">
-        <img src="../Imagenes/MenuNav/menu_nav_responsive.png" alt="">
+        <img src="Imagenes/MenuNav/menu_nav_responsive.png" alt="">
       </label>
     </div>
     <input type="checkbox" class="icono_menu_checkbox" id="menu-drop-checkbox">
     <div class="nav__container">
       <section class="section__logo">
-        <a href="../index.html">
-          <h1 class="nav_title_first">BARBER SHOP</h1>
+        <a href="index.html">
+          <h1>BARBER SHOP</h1>
           <img src="../iconos/iconoInicio.png" class="icon_inicio" width="30px">
         </a>
       </section>
       <section class="nav__sec">
-        <a href="#" class="nav__menu">
+        <a href="login.html" class="nav__menu">
           <img src="../iconos/userImg.png" class="nav__icon_profile">
         </a>
         <a href="#" class="nav__menu">
@@ -48,65 +48,66 @@
       </div>
 
       <div class="contenedorGenerico">
-        <ul class="menu-drop" id="menu-drop">
-          <li class="item">
+        <div class="menu_container" id="menu_mobile">
+          <li id="item_desktop">
             <i class="fa-solid fa-house fa-xl" id="icono_img"></i>
             <a href="../index.html" class="item">
               Home
             </a>
           </li>
-          <li class="item">
+          <li id="item_desktop">
             <i class="fa-solid fa-folder fa-xl" id="icono_img"></i>
             <a href="productos.html" class="item">
               Productos
             </a>
           </li>
-          <li class="item">
+          <li id="item_desktop">
             <i class="fa-solid fa-calendar fa-xl" id="icono_img"></i>
-            <a href="../pages/agenda.html" class="item">
+            <a href="agenda.html" class="item">
               Agenda
             </a>
           </li>
-          <li class="itemMobile">
+          <li id="itemMobile">
             <i class="fa-sharp fa-solid fa-phone fa-xl" id="icono_img"></i>
             <a href="#" class="item">
               Contacto
             </a>
           </li>
-          <li class="itemMobile">
+          <li id="itemMobile">
             <i class="fa-solid fa-user-group fa-xl" id="icono_img"></i>
             <a href="#" class="item">
               Personal
             </a>
           </li>
-          <li class="itemMobile">
+          <li id="itemMobile">
             <i class="fa-solid fa-gears fa-xl" id="icono_img"></i>
             <a href="#" class="item">
               Configuracion
             </a>
           </li>
-          <li class="itemMobile-Salir">
+          <li id="itemMobile-Salir">
             <i class="fa-solid fa-right-from-bracket fa-2xl" id="icono_img"></i>
             <a href="#" class="item">
               Salir
             </a>
           </li>
 
-        </ul>
+        </div>
       </div>
 
 
     </div>
   </nav>
+
   <div class="container">
     <div class="header">
       <h1>Productos</h1>
     </div>
     <div class="search_product">
-      <input type="text" name="buscar_texto" placeholder="Buscar producto">
       <a href="#">
         <i class="fa-solid fa-magnifying-glass" id="icon_search"></i>
       </a>
+      <input type="text" name="buscar_texto" id="id_search" placeholder="Buscar producto">
     </div>
     <div class="products">
       <div class="product">

@@ -1,0 +1,25 @@
+@for $i from 1 through 6 {
+    .nav__container-#{$i}{
+        font-size: 1rem * $i;
+    }
+}
+
+@each $color in  red, green, yellow{
+    .color-#{$color}{
+        background-color: $color;
+    }
+}
+
+// Calves valor map
+$btn-colors:(
+    naranja: #f88111,
+    gris: #5b5959,
+    verde: #11c34c,
+    color_personalizado:#2C3E50,
+);
+
+@each $btn-color, $color in $btn-colors{
+    .btn-#{$btn-color}{
+        background-color: #{$color};
+    }
+} 

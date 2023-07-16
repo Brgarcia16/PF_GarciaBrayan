@@ -1,0 +1,9 @@
+$temporada: "summer";
+$login: "login";
+
+@if($temporada =="summer") {
+    .nav__container {
+        // opacity: 0.1;
+    }
+}
+

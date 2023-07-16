@@ -17,19 +17,19 @@
   <nav class="nav">
     <div id="icono_menu" class="icono_menu">
       <label for="menu-drop-checkbox">
-        <img src="../Imagenes/MenuNav/menu_nav_responsive.png" alt="">
+        <img src="Imagenes/MenuNav/menu_nav_responsive.png" alt="">
       </label>
     </div>
     <input type="checkbox" class="icono_menu_checkbox" id="menu-drop-checkbox">
     <div class="nav__container">
       <section class="section__logo">
-        <a href="../index.html">
-          <h1 class="nav_title_first">BARBER SHOP</h1>
+        <a href="index.html">
+          <h1>BARBER SHOP</h1>
           <img src="../iconos/iconoInicio.png" class="icon_inicio" width="30px">
         </a>
       </section>
       <section class="nav__sec">
-        <a href="#" class="nav__menu">
+        <a href="login.html" class="nav__menu">
           <img src="../iconos/userImg.png" class="nav__icon_profile">
         </a>
         <a href="#" class="nav__menu">
@@ -41,58 +41,58 @@
         <h2 class="title__mobile">Inicio</h2>
         <div class="perfil__user">
           <i class="fa-solid fa-user" style="color: #000000;" ></i>
-          <a href="../index.html">
+          <a href="index.html">
             Perfil
           </a>
         </div>
       </div>
 
       <div class="contenedorGenerico">
-        <ul class="menu-drop" id="menu-drop">
-          <li class="item">
+        <div class="menu_container" id="menu_mobile">
+          <li id="item_desktop">
             <i class="fa-solid fa-house fa-xl" id="icono_img"></i>
             <a href="../index.html" class="item">
               Home
             </a>
           </li>
-          <li class="item">
+          <li id="item_desktop">
             <i class="fa-solid fa-folder fa-xl" id="icono_img"></i>
             <a href="productos.html" class="item">
               Productos
             </a>
           </li>
-          <li class="item">
+          <li id="item_desktop">
             <i class="fa-solid fa-calendar fa-xl" id="icono_img"></i>
-            <a href="../pages/agenda.html" class="item">
+            <a href="agenda.html" class="item">
               Agenda
             </a>
           </li>
-          <li class="itemMobile">
+          <li id="itemMobile">
             <i class="fa-sharp fa-solid fa-phone fa-xl" id="icono_img"></i>
             <a href="#" class="item">
               Contacto
             </a>
           </li>
-          <li class="itemMobile">
+          <li id="itemMobile">
             <i class="fa-solid fa-user-group fa-xl" id="icono_img"></i>
             <a href="#" class="item">
               Personal
             </a>
           </li>
-          <li class="itemMobile">
+          <li id="itemMobile">
             <i class="fa-solid fa-gears fa-xl" id="icono_img"></i>
             <a href="#" class="item">
               Configuracion
             </a>
           </li>
-          <li class="itemMobile-Salir">
+          <li id="itemMobile-Salir">
             <i class="fa-solid fa-right-from-bracket fa-2xl" id="icono_img"></i>
             <a href="#" class="item">
               Salir
             </a>
           </li>
 
-        </ul>
+        </div>
       </div>
 
 
@@ -159,7 +159,7 @@
           </div>
         </div>
         <div class="field_group">
-          <input   type="text" class="input-field" placeholder="Ingresar Apellido" autocomplete="off">
+          <input type="text" class="input-field" placeholder="Ingresar Apellido" autocomplete="off">
           <div class="icon">
             <i class="fa fa-user" aria-hidden="true"></i>
           </div>
@@ -183,20 +183,20 @@
         </select>
 
         <div class="container__confirm">
-          <button type="button" class="btn btn-primary" id="button__desktop">
+          <button type="button" class="btn btn-color_personalizado" id="button__desktop">
             Limpar Datos
           </button>
-          <button type="button" class="btn btn-success" id="button__desktop">
+          <button type="button" class="btn btn-color_personalizado" id="button__desktop">
             Aceptar
           </button>
           <button type="button" class="btn btn-success" id="button__mobile_reservar">
             Reservar
           </button>
-          <a href="../index.html">
-            <button type="button" class="btn btn-success" id="button__mobile_volver">
-              Volver
-            </button>
-          </a>
+          <button type="button" class="btn btn-success" id="button__mobile_volver">
+            <a href="../index.html" id="btn_volver">
+                Volver
+            </a>
+          </button>
         </div>
 
       </div>

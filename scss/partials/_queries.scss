@@ -1,0 +1,300 @@
+@media screen and (min-width: $resolutionMobile) {
+
+    #itemMobile,
+    #itemMobile-Salir {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $resolutionMobile) {
+
+    .title__mobile,
+    .perfil__user {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $resolutionNav) {
+    .nav__container {
+        transform: translateY(0);
+    }
+
+    .icono_menu {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: $resolutionNav) {
+    .nav__container {
+        transform: translateY(0);
+    }
+
+    .icono_menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $resolutionstandard) {
+    .section__logo {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: $resolutionNav_option2),
+(max-width: 430px) {
+    .nav__container {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 14, 26, 0.747);
+        border-radius: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .headerMobile {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100vw;
+        height: 100px;
+        left: 146px;
+    }
+
+    .title__mobile {
+        font-size: 20px;
+        position: absolute;
+        top: 43px;
+        color: white;
+    }
+
+    .perfil__user {
+        left: 100px;
+        position: absolute;
+        top: 44px;
+        cursor: pointer;
+    }
+
+    #user__picture {
+        font-size: 10px;
+        order: 2;
+    }
+
+    /* Agenda mobile */
+    .container__agenda {
+        background-color: #8dabd1;
+        border-radius: 3rem;
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        top: 0;
+        flex-direction: column;
+        overflow: hidden;
+
+        .containerCalendar {
+            display: flex;
+            text-align: center;
+            top: -90px;
+
+            .calendar {
+                position: relative;
+                top: 155px;
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    .container_register {
+        position: relative;
+        display: flex;
+        top: -43px;
+        width: 100%;
+
+        .agenda_user {
+            width: 100%;
+
+            .container__confirm {
+                position: relative;
+                left: 9px;
+            }
+        }
+    }
+
+    .field_group,
+    .combobox__time,
+    .combobox__location {
+        width: 208px;
+    }
+
+    .container__confirm #button__desktop,
+    .title_agenda {
+        display: none;
+    }
+
+    #btn_volver {
+        text-decoration: none;
+        color: $blanco;
+        position: relative;
+    }
+
+    /* container de productos para mobile */
+    .container {
+        position: relative;
+        top: 0;
+
+    }
+
+    @media screen and (max-width: $resolutionNav_option2),
+    (max-width: 428px) {
+        .contenedorGenerico {
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            height: 700px;
+            overflow: hidden;
+
+            .menu_container {
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                gap: 60px;
+                align-items: start;
+            }
+        }
+
+        .itemMobile,
+        .item,
+        .itemMobile-Salir {
+            color: #ececec;
+            list-style: none;
+        }
+
+        .itemMobile-Salir {
+            padding-top: 50px;
+            padding-left: 25px;
+        }
+
+        #icono_img {
+            width: 30px;
+        }
+
+        .item a,
+        .perfil__user a,
+        .itemMobile a {
+            color: aliceblue;
+        }
+
+        .nav_title_first,
+        .icon_inicio,
+        .carousel__container {
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (min-width: $resolutionMobile) {
+
+    .itemMobile,
+    .itemMobile-Salir,
+    .TitleMobile,
+    .headerMobile,
+    #button__mobile_reservar,
+    #button__mobile_volver {
+        display: none;
+    }
+}
+
+@media screen and (max-width:579px) {
+    .nav-footer ul {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:976px) {
+
+    hr,
+    #row_direction {
+        display: none;
+    }
+}
+
+@media screen and (max-width:$resolutionFooter) {
+    .footerContainer {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:$resolutionFooter) {
+
+    .contianerGeneric,
+    .text-center,
+    .nav__sec {
+        display: none;
+    }
+}
+
+
+
+
+// Medias query login/register
+@media screen and (max-width: $resolutionstandard) {
+    .container__data {
+        background-color: rgb(2, 2, 36);
+    }
+
+    .formLogin {
+        background-color: transparent;
+
+        .user__data {
+            .controls {
+                width: 300px;
+
+                #icon_log {
+                    right: 450px;
+                }
+
+                #icon_pass {
+                    top: 81px;
+                }
+            }
+
+            #recordar_datos,
+            #recuperarPass,
+            #recuperar {
+                display: none;
+            }
+
+            #recuperarMobile {
+                width: 100px;
+                height: 30px;
+                right: 119px;
+            }
+
+            #button_login {
+                background-color: none;
+                border-radius: 10rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $resolutionstandard) {
+    .formLogin {
+        top: 0;
+        min-height: 100vh;
+    }
+}
+
+@media screen and (min-width: $resolutionstandard) {
+    #recuperarMobile {
+        display: none;
+    }
+}

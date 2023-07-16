@@ -1,7 +1,7 @@
 {
-  "name": "pagina-web",
+  "name": "repo_pagina_web",
   "version": "1.0.0",
-  "description": "",
+  "description": "Repositorio pagina web Barberia",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
