@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="desription" content="Barberia y Venta de productos de barberia">
+  <meta name="keyword" content="barberia, productos, peluqueria, agenda, eventos, shop">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="icon" href="iconos/inicio.png" type="image/x-icon">
   <title>Inicio</title>
@@ -21,6 +23,9 @@
         <img src="Imagenes/MenuNav/menu_nav_responsive.png" alt="">
       </label>
     </div>
+    <div class="image_container_mobile">
+      <img src="Imagenes/mobile/mobile_home.jpg" alt="" style="max-width: 100%; height: 100%; position: absolute;">
+    </div>
     <input type="checkbox" class="icono_menu_checkbox" id="menu-drop-checkbox">
     <div class="nav__container">
       <section class="section__logo">
@@ -30,7 +35,10 @@
         </a>
       </section>
       <section class="nav__sec">
-        <a href="pages/login.html" class="nav__menu">
+        <button type="submit" class="nav__button">
+          <a href="pages/login.html">Ingresar</a>
+        </button>
+        <a href="#" class="nav__menu">
           <img src="iconos/userImg.png" class="nav__icon_profile">
         </a>
         <a href="#" class="nav__menu">
@@ -41,7 +49,7 @@
       <div class="headerMobile">
         <h2 class="title__mobile">Inicio</h2>
         <div class="perfil__user">
-          <i class="fa-solid fa-user" style="color: #000000;" ></i>
+          <i class="fa-solid fa-user" style="color: #000000;"></i>
           <a href="index.html">
             Perfil
           </a>
@@ -88,7 +96,7 @@
           </li>
           <li id="itemMobile-Salir">
             <i class="fa-solid fa-right-from-bracket fa-2xl" id="icono_img"></i>
-            <a href="#" class="item">
+            <a href="pages/login.html" class="item">
               Salir
             </a>
           </li>
@@ -100,47 +108,6 @@
     </div>
   </nav>
 
-  <div class="carousel__container">
-    <div class="container-slider">
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="Imagenes/Carrusel/fondo_imag.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="Imagenes/Carrusel/fondo_imag2.jpeg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="Imagenes/Carrusel/fondo_imag3.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
 
   <div class="contianerGeneric">
     <div class="row" id="row__container">
@@ -148,7 +115,10 @@
         <div class="card">
           <img src="Imagenes/Cards/primeraimg.avif" class="card-img-top" alt="...">
           <div class="card-body">
-            <button type="submit">Sobre nosotros</button>
+            <h3 class="card-title">Sobre nosotros</h3>
+            <p class="card-sub-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat modi aliquam
+              repellat officiis, sint accusamus explicabo expedita veniam, molestiae neque nobis molestias minima sit
+              magnam quaerat cumque natus! Esse, optio?</p>
           </div>
         </div>
       </div>
@@ -156,7 +126,16 @@
         <div class="card">
           <img src="Imagenes/Cards/card4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <button type="submit">Servicios</button>
+            <h3 class="card-title">Servicios</h3>
+            <p class="card-sub-title" id="card_service">
+            <ul class="servicios_stand">
+              <li id="servicio_1">Corte + barba</li>
+              <li id="servicio_2">Corte clasico</li>
+              <li id="servicio_3">Corte con desbordado</li>
+              <li id="servicio_4">Corte solo a tijera</li>
+              <li id="servicio_5">Tinte de pelo</li>
+            </ul>
+            </p>
           </div>
         </div>
       </div>
@@ -164,14 +143,21 @@
         <div class="card">
           <img src="Imagenes/Cards/card3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <button type="submit" class="btn-verde">Horarios</button>
+            <h3 class="card-title">Horarios</h3>
+            <p class="card-sub-title">Esto son los horarios de servicios</p>
+            <ul>
+              <li>Lunes: 09:00 - 19:00</li>
+              <li>Martes 09:00 - 19:00</li>
+              <li>Miercole: 09:00 - 19:00</li>
+              <li>Jueves: 09:00 - 19:00</li>
+              <li>Vierenes: 09:00 - 19:00</li>
+              <li>Sabado: 09:00 - 19:00</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
 
 
   <div class="footerContainer">
@@ -204,7 +190,6 @@
       <p>Copyright 2023; Designed by <span class="designer">Brayan Garcia</span> </p>
     </div>
   </div>
-
 
 
 

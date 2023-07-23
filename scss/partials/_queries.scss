@@ -1,4 +1,4 @@
-@media screen and (min-width: $resolutionMobile) {
+@media screen and (min-width: $resolutionMobileBig) {
 
     #itemMobile,
     #itemMobile-Salir {
@@ -6,7 +6,7 @@
     }
 }
 
-@media screen and (min-width: $resolutionMobile) {
+@media screen and (min-width: $resolutionMobileBig) {
 
     .title__mobile,
     .perfil__user {
@@ -42,7 +42,7 @@
 }
 
 
-@media screen and (max-width: $resolutionNav_option2),
+@media screen and (max-width: $resolutionMobileBig),
 (max-width: 430px) {
     .nav__container {
         width: 100vw;
@@ -57,7 +57,7 @@
         position: absolute;
         top: 0;
         display: flex;
-        flex-direction: column-reverse;
+        // flex-direction: column-reverse;
         justify-content: center;
         width: 100vw;
         height: 100px;
@@ -86,7 +86,7 @@
     /* Agenda mobile */
     .container__agenda {
         background-color: #8dabd1;
-        border-radius: 3rem;
+        border-radius: 1rem;
         height: 100vh;
         position: absolute;
         display: flex;
@@ -143,25 +143,20 @@
     }
 
     /* container de productos para mobile */
-    .container {
-        position: relative;
-        top: 0;
 
-    }
 
-    @media screen and (max-width: $resolutionNav_option2),
-    (max-width: 428px) {
+
+    @media screen and (min-width: $resolutionMobileSmall) and (max-width: $resolutionMobileBig) {
         .contenedorGenerico {
+            @include backgroundResolutionMobile($resolutionMobileSmall, $resolutionMobileBig);
+            @include size(700px, 300px);
             display: flex;
             justify-content: center;
-            width: 300px;
-            height: 700px;
-            overflow: hidden;
+            overflow-y: auto;
 
             .menu_container {
                 flex-direction: column;
-                display: flex;
-                justify-content: center;
+                align-items: center;
                 gap: 60px;
                 align-items: start;
             }
@@ -197,15 +192,70 @@
     }
 }
 
+// Media queries productos
+@media screen and (min-width: 360px) and (max-width: 1080px) {
+    .container {
+        position: absolute;
+        display: flex;
+        top: -10px;
+        width: 100%;
 
-@media screen and (min-width: $resolutionMobile) {
+        .product {
+            .image {
+                @include size(60%, 100%);
+                display: grid;
+                place-content: center;
+            }
+
+            .image img {
+                padding-top: 10px;
+                width: 190px;
+            }
+
+            .namePrice {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .namePrice h3 {
+                padding-top: 30px;
+                font-size: 1em;
+                text-transform: capitalize;
+                color: rgb(27, 27, 27);
+            }
+
+            .namePrice span {
+                padding-top: 30px;
+                font-size: 1.5em;
+                color: rgb(27, 27, 27);
+            }
+
+            #button__mobile_volver_product {
+                position: relative;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #icon_search {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: $resolutionMobileBig) {
 
     .itemMobile,
     .itemMobile-Salir,
     .TitleMobile,
     .headerMobile,
     #button__mobile_reservar,
-    #button__mobile_volver {
+    #button__mobile_volver,
+    .container_home_mobile,
+    #button__mobile_volver_product, .image_container_mobile {
         display: none;
     }
 }

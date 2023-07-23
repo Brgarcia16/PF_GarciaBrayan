@@ -1,9 +1,24 @@
-$temporada: "summer";
+$temporada: "shopSale";
 $login: "login";
+$shopSale: "shopSale";
 
 @if($temporada =="summer") {
     .nav__container {
         // opacity: 0.1;
+    }
+}
+
+
+@if($temporada == "#") {
+    .nav__container {
+        // opacity: 0.1;
+    }
+
+    .card-body{
+        ul #servicio_1{
+            color:  rgb(247, 247, 222);
+        }
+
     }
 }
 

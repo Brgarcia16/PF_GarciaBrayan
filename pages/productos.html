@@ -29,6 +29,9 @@
         </a>
       </section>
       <section class="nav__sec">
+        <button type="submit" class="nav__button">
+          <a href="login.html">Ingresar</a>
+        </button>
         <a href="login.html" class="nav__menu">
           <img src="../iconos/userImg.png" class="nav__icon_profile">
         </a>
@@ -103,7 +106,14 @@
     <div class="header">
       <h1>Productos</h1>
     </div>
+    
     <div class="search_product">
+      <select class="combo_ordernar">
+        <option selected disabled>Ordernar por </option>
+        <option value="opcion1">Defecto</option>
+        <option value="opcion2">Precio</option>
+        <option value="opcion2">Fecha</option>
+      </select>
       <a href="#">
         <i class="fa-solid fa-magnifying-glass" id="icon_search"></i>
       </a>
@@ -227,6 +237,11 @@
           <button>Comprar ahora</button>
         </div>
       </div>
+      <button type="button" class="btn btn-success" id="button__mobile_volver_product">
+        <a href="../index.html" id="btn_volver">
+            Volver
+        </a>
+      </button>
     </div>
   </div>
 
