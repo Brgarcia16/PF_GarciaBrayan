@@ -19,7 +19,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .nav .icono_menu {
@@ -58,9 +58,8 @@ body {
   text-align: center;
   left: 200px;
   display: flex;
-  gap: 5rem;
+  gap: 4.5rem;
   padding: 29px;
-  position: absolute;
 }
 .nav__container .contenedorGenerico .menu_container #item_desktop {
   padding: 0rem;
@@ -735,8 +734,6 @@ a {
 @media screen and (max-width: 1080px) and (min-width: 360px) and (max-width: 1080px), screen and (max-width: 430px) and (min-width: 360px) and (max-width: 1080px) {
   .contenedorGenerico {
     padding-top: 20px;
-    width: 300px;
-    height: 700px;
     display: flex;
     justify-content: center;
     overflow-y: auto;
@@ -748,14 +745,13 @@ a {
     align-items: start;
   }
   .itemMobile,
-  .item,
-  .itemMobile-Salir {
+  .item {
     color: #ececec;
     list-style: none;
   }
-  .itemMobile-Salir {
-    padding-top: 50px;
-    padding-left: 25px;
+  #itemMobile-Salir {
+    position: relative;
+    top: -28px;
   }
   #icono_img {
     width: 30px;

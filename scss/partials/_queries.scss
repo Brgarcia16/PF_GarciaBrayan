@@ -149,7 +149,6 @@
     @media screen and (min-width: $resolutionMobileSmall) and (max-width: $resolutionMobileBig) {
         .contenedorGenerico {
             @include backgroundResolutionMobile($resolutionMobileSmall, $resolutionMobileBig);
-            @include size(700px, 300px);
             display: flex;
             justify-content: center;
             overflow-y: auto;
@@ -163,15 +162,14 @@
         }
 
         .itemMobile,
-        .item,
-        .itemMobile-Salir {
+        .item {
             color: #ececec;
             list-style: none;
         }
 
-        .itemMobile-Salir {
-            padding-top: 50px;
-            padding-left: 25px;
+        #itemMobile-Salir {
+            position: relative;
+            top: -28px;
         }
 
         #icono_img {
