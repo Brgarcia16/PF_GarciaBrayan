@@ -144,8 +144,6 @@
 
     /* container de productos para mobile */
 
-
-
     @media screen and (min-width: $resolutionMobileSmall) and (max-width: $resolutionMobileBig) {
         .contenedorGenerico {
             @include backgroundResolutionMobile($resolutionMobileSmall, $resolutionMobileBig);
@@ -187,6 +185,12 @@
         .carousel__container {
             display: none;
         }
+    }
+}
+
+@media screen and (min-width: 1082px) {
+    .menu_container {
+       position: absolute;
     }
 }
 
