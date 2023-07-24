@@ -60,6 +60,7 @@ body {
   display: flex;
   gap: 4.5rem;
   padding: 29px;
+  position: absolute;
 }
 .nav__container .contenedorGenerico .menu_container #item_desktop {
   padding: 0rem;
