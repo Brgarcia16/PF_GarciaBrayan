@@ -15,7 +15,7 @@ h2 {
 }
 
 body {
-  touch-action: none;
+  touch-action: cross-slide-y;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -731,9 +731,8 @@ a {
   }
   /* container de productos para mobile */
 }
-@media screen and (max-width: 810px) and (min-width: 360px) and (max-width: 810px), screen and (max-width: 430px) and (min-width: 360px) and (max-width: 810px) {
+@media screen and (max-width: 810px) and (min-width: 180px) and (max-width: 810px), screen and (max-width: 430px) and (min-width: 180px) and (max-width: 810px) {
   .contenedorGenerico {
-    padding-top: 20px;
     display: flex;
     justify-content: center;
     overflow-y: auto;

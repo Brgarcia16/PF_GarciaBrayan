@@ -1,4 +1,4 @@
-@media screen and (min-width: $resolutionMobileBig) {
+@media screen and (min-width: $resolutionstandard) {
 
     #itemMobile,
     #itemMobile-Salir {
@@ -6,7 +6,7 @@
     }
 }
 
-@media screen and (min-width: $resolutionMobileBig) {
+@media screen and (min-width: $resolutionstandard) {
 
     .title__mobile,
     .perfil__user {
@@ -14,7 +14,7 @@
     }
 }
 
-@media screen and (min-width: $resolutionNav) {
+@media screen and (min-width: $resolutionstandard) {
     .nav__container {
         transform: translateY(0);
     }
@@ -25,7 +25,7 @@
 }
 
 
-@media screen and (min-width: $resolutionNav) {
+@media screen and (min-width: $resolutionstandard) {
     .nav__container {
         transform: translateY(0);
     }
@@ -42,11 +42,10 @@
 }
 
 
-@media screen and (max-width: $resolutionMobileBig),
+@media screen and (max-width: $resolutionstandard),
 (max-width: 430px) {
     .nav__container {
-        width: 100vw;
-        height: 100vh;
+        @include size (100vh,100vw);
         background-color: rgba(0, 14, 26, 0.747);
         border-radius: 3rem;
         display: flex;
@@ -57,10 +56,8 @@
         position: absolute;
         top: 0;
         display: flex;
-        // flex-direction: column-reverse;
         justify-content: center;
-        width: 100vw;
-        height: 100px;
+        @include size (100px,100vw);
         left: 146px;
     }
 
@@ -144,9 +141,9 @@
 
     /* container de productos para mobile */
 
-    @media screen and (min-width: $resolutionMobileSmall) and (max-width: $resolutionMobileBig) {
+    @media screen and (min-width: $resolutionMobileSmall) and (max-width: $resolutionstandard) {
         .contenedorGenerico {
-            @include backgroundResolutionMobile($resolutionMobileSmall, $resolutionMobileBig);
+            @include backgroundResolutionMobile($resolutionMobileSmall, $resolutionstandard);
             display: flex;
             justify-content: center;
             overflow-y: auto;
@@ -250,7 +247,7 @@
 
 
 
-@media screen and (min-width: $resolutionMobileBig) and (min-width: $resolutionMobileBig_2) {
+@media screen and (min-width: $resolutionstandard) and (min-width: $resolutionstandard) {
     .itemMobile,
     .itemMobile-Salir,
     .TitleMobile,
@@ -278,14 +275,14 @@
     }
 }
 
-@media screen and (max-width:$resolutionFooter) {
+@media screen and (max-width:$resolutionstandard) {
     .footerContainer {
         display: none;
     }
 }
 
 
-@media screen and (max-width:$resolutionFooter) {
+@media screen and (max-width:$resolutionstandard) {
 
     .contianerGeneric,
     .text-center,

@@ -9,16 +9,20 @@ $shopSale: "shopSale";
 }
 
 
-@if($temporada == "#") {
+@if($temporada =="#") {
     .nav__container {
-        // opacity: 0.1;
-    }
+        background-color: rgb(38, 53, 53);
 
-    .card-body{
-        ul #servicio_1{
-            color:  rgb(247, 247, 222);
+
+        #menu_mobile {
+            border-radius: 3rem;
+            background-color: rgb(42, 42, 56);
         }
-
+        
+    }
+    .card-body {
+        ul #servicio_1 {
+            color: rgb(247, 247, 222);
+        }
     }
 }
-
