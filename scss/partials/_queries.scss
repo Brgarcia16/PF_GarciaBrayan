@@ -35,7 +35,7 @@
     }
 }
 
-@media screen and (max-width: $resolutionstandard) {
+@media screen and (max-width: 810px) {
     .section__logo {
         display: none;
     }
@@ -188,11 +188,13 @@
     }
 }
 
-@media screen and (min-width: 1082px) {
+@media screen and (min-width: $resolutionstandard) {
     .menu_container {
        position: absolute;
     }
 }
+
+
 
 // Media queries productos
 @media screen and (min-width: 360px) and (max-width: 1080px) {
@@ -248,7 +250,7 @@
 
 
 
-@media screen and (min-width: $resolutionMobileBig) {
+@media screen and (min-width: $resolutionMobileBig) and (min-width: $resolutionMobileBig_2) {
     .itemMobile,
     .itemMobile-Salir,
     .TitleMobile,

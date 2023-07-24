@@ -614,19 +614,19 @@ a {
   background-color: #2C3E50;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 810px) {
   #itemMobile,
   #itemMobile-Salir {
     display: none;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 810px) {
   .title__mobile,
   .perfil__user {
     display: none;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 810px) {
   .nav__container {
     transform: translateY(0);
   }
@@ -634,7 +634,7 @@ a {
     display: none;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 810px) {
   .nav__container {
     transform: translateY(0);
   }
@@ -642,12 +642,12 @@ a {
     display: none;
   }
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 810px) {
   .section__logo {
     display: none;
   }
 }
-@media screen and (max-width: 1080px), (max-width: 430px) {
+@media screen and (max-width: 810px), (max-width: 430px) {
   .nav__container {
     width: 100vw;
     height: 100vh;
@@ -731,7 +731,7 @@ a {
   }
   /* container de productos para mobile */
 }
-@media screen and (max-width: 1080px) and (min-width: 360px) and (max-width: 1080px), screen and (max-width: 430px) and (min-width: 360px) and (max-width: 1080px) {
+@media screen and (max-width: 810px) and (min-width: 360px) and (max-width: 810px), screen and (max-width: 430px) and (min-width: 360px) and (max-width: 810px) {
   .contenedorGenerico {
     padding-top: 20px;
     display: flex;
@@ -767,7 +767,7 @@ a {
     display: none;
   }
 }
-@media screen and (min-width: 1082px) {
+@media screen and (min-width: 810px) {
   .menu_container {
     position: absolute;
   }
@@ -814,7 +814,7 @@ a {
     display: none;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 810px) and (min-width: 810px) {
   .itemMobile,
   .itemMobile-Salir,
   .TitleMobile,
@@ -850,7 +850,7 @@ a {
     display: none;
   }
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 810px) {
   .container__data {
     background-color: rgb(2, 2, 36);
   }
@@ -881,13 +881,13 @@ a {
     border-radius: 10rem;
   }
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 810px) {
   .formLogin {
     top: 0;
     min-height: 100vh;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 810px) {
   #recuperarMobile {
     display: none;
   }
