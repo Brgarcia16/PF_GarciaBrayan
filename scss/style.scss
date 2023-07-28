@@ -427,8 +427,13 @@ a {
 .container__agenda {
     background-color: rgb(179, 203, 206);
     @include size(700px, 100%);
-    // width: 100%;
-    // height: 700px;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 1.5em;
+    box-shadow: 0 0 20px 0 rgba(247, 247, 247, 0.3);
+    
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -588,8 +593,9 @@ a {
         }
 
         #icon_search {
-            position: absolute;
-            top: 212px;
+            position: relative;
+            top: 5px;
+            left: 20px;
         }
 
     }
@@ -780,35 +786,43 @@ ul {
 
 
 // No evaluar
-#mi-boton {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+.notificacion {
+    display: none;
+    position: fixed;
+    top: 90px;
+    right: 10px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .notificacion.success {
+    background-color: #28a745;
+  }
+  
+  .cerrar {
+    float: right;
     cursor: pointer;
   }
   
-  #mi-boton:hover {
-    background-color: #0056b3;
+  /* Estilos para animar la aparición de la notificación */
+  .notificacion.mostrar {
+    display: block;
+    animation: aparecer 0.5s ease;
   }
   
-  /* Estilos de la notificación */
-  .notificacion {
-    display: none; /* Oculta la notificación inicialmente */
-    position: fixed;
-    top: 85px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #00cc66;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 9999; 
-}
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 @import "partials/condicionales";
 @import "partials/bucles";

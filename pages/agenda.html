@@ -72,9 +72,9 @@
               Agenda
             </a>
           </li>
-          <li id="itemMobile">
+          <li id="item_contact">
             <i class="fa-sharp fa-solid fa-phone fa-xl" id="icono_img"></i>
-            <a href="#" class="item">
+            <a href="contacto.html" class="item">
               Contacto
             </a>
           </li>
@@ -191,8 +191,13 @@
           <button type="button" class="btn btn-color_personalizado" id="button__desktop">
             Limpar Datos
           </button>
-          <button type="button" class="btn btn-color_personalizado" id="button__desktop">
-            Aceptar
+          <!-- No evaluar mensaje notificacion -->
+          <button type="button" onclick="mostrarNotificacion()" class="btn btn-color_personalizado" id="button__desktop">
+            Reservar
+            <div class="notificacion success">
+              <span class="cerrar" onclick="cerrarNotificacion()">&times;</span>
+              <p>¡Agenda exitosa! Se ha completado correctamente.</p>
+            </div>
           </button>
           <button  type="button" class="btn btn-success" id="button__mobile_reservar">
             Reservar
@@ -243,7 +248,7 @@
     </div>
   </div>
 
-
+  <script src="../js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
