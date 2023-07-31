@@ -1,0 +1,829 @@
+@import "partials/variables";
+@import "partials/reset";
+@import "partials/mixins.scss";
+
+
+@include encabezados(2rem);
+
+body {
+    touch-action: cross-slide-y;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+
+.nav {
+    .icono_menu {
+        top: 1rem;
+        cursor: pointer;
+        position: absolute;
+        border-radius: 3rem;
+        width: 40px;
+        z-index: 1;
+        left: 20px;
+    }
+
+    .icono_menu_checkbox {
+        display: none;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.nav__container {
+    @include size(80px, 100%);
+    margin: 0 auto;
+    background-color: rgb(3, 18, 24);
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: "section__logo nav__sec";
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 1.4s;
+    transform: translate(-100%);
+
+    .contenedorGenerico {
+        .menu_container {
+            background-color: transparent;
+            top: 0;
+            text-align: center;
+            left: 200px;
+            display: flex;
+            gap: 4.5rem;
+            padding: 29px;
+
+            #item_desktop {
+                padding: 0rem;
+                list-style: none;
+
+                &:hover {
+                    border-radius: 5.5px solid;
+                }
+            }
+        }
+    }
+
+
+}
+
+.section__logo {
+    h1 {
+        grid-area: section__logo;
+        color: rgb(36, 21, 90);
+        font-size: 20px;
+        padding-left: 39px;
+        padding-top: 26px;
+    }
+
+    .icon_inicio {
+        width: 50px;
+        position: absolute;
+        top: 17px;
+    }
+
+    img {
+        padding-top: 0;
+    }
+}
+
+.nav__sec {
+    .nav__menu {
+        grid-area: nav__sec;
+        position: relative;
+        top: 10px;
+        z-index: 10;
+    }
+
+    .nav__menu--second {
+        transform: var(--img2);
+    }
+
+    .nav__icon_profile {
+        width: 34px;
+    }
+
+    .nav__icon_card {
+        width: 51px;
+        padding-right: 10px;
+    }
+
+    .nav__button {
+        position: relative;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        background-color: transparent;
+        width: 90px;
+        height: 40px;
+        border-color: gray;
+        border-radius: 1rem;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu-drop--show {
+    transform: translate(0);
+}
+
+.icono_menu_checkbox:checked+.nav__container {
+    transform: translate(0);
+}
+
+
+.contianerGeneric {
+    width: 100%;
+    display: flex;
+    background-color: black;
+    height: 800px;
+
+    #row__container {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .card {
+        background-color: transparent;
+        overflow: hidden;
+    }
+
+    img {
+        height: 56vh;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+    .card-body {
+        @include size(100%, 100%);
+        top: 0;
+        right: -100%;
+        position: absolute;
+        color: white;
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 2s;
+        padding: 30px;
+
+        .card-title {
+            text-transform: uppercase;
+            font-weight: 500px;
+        }
+
+        .card-sub-title {
+            text-transform: capitalize;
+        }
+    }
+
+    .card:hover .card-body {
+        right: 0;
+    }
+
+}
+
+/* Comienza el footer */
+
+
+.footerContainer {
+    bottom: 0;
+    margin-top: 700px;
+    background-color: rgb(3, 18, 24);
+
+    .footerRedesSociales {
+        text-align: center;
+        color: white;
+        opacity: 0.5;
+        margin: 0px 5px;
+        text-transform: uppercase;
+    }
+
+    .socialIcons img {
+        width: 30px;
+
+        margin: 10px;
+        border-radius: 50%;
+    }
+
+    .socialIcons a:hover {
+        @include backgroundColorTransaction(radial-gradient(circle, rgba(19, 24, 47, 0.5578703703703703) 56%, rgba(122, 82, 90, 1) 100%));
+        opacity: 0.5;
+        border-radius: 50%;
+        transition: 0.5;
+    }
+
+    .socialIcons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-footer {
+        margin: 30px 0;
+    }
+
+    .nav-footer ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .nav-footer ul li {
+        color: aliceblue;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 1.4rem;
+        opacity: 0.5;
+        transition: 0.5;
+    }
+
+    .nav-footer ul li a:hover {
+        border-radius: 4rem;
+        @include backgroundColorTransaction(radial-gradient(circle, rgba(191, 200, 245, 0.6319444444444444) 25%, rgba(122, 82, 90, 1) 100%));
+        opacity: 0.5;
+        border-radius: 1rem;
+        transition: 0.5;
+    }
+
+
+    .footerCopy {
+        background-color: rgba(15, 165, 230, 0.247);
+        padding: 5px;
+        text-align: center;
+    }
+
+    .footerCopy p {
+        color: white;
+        opacity: 0.5;
+        letter-spacing: 1px;
+        font-weight: 300;
+        margin: 0px 5px;
+        text-transform: uppercase;
+    }
+
+}
+
+
+
+
+
+
+
+// Login and Register
+
+.container__data {
+    /*Carga una img del background. Lo pongo de esta manera para que me quede de fondo de los demas atributos.*/
+    background-color: rgb(180, 193, 204);
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include size(100%, 100%);
+    // width: 100%;
+    // height: 100%;
+    z-index: 9999;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+
+}
+
+.recuperarPass {
+    text-decoration: none;
+}
+
+
+.buttons {
+    @include size(30px, 200px);
+    // width: 200px;
+    // height: 30px;
+    background: #072d4d67;
+    border: none;
+    color: white;
+}
+
+
+
+.formLogin {
+    @include size(500px, 700px);
+    // height: 500px;
+    // width: 700px;
+    background-color: hsla(210, 23%, 5%, 0.699);
+
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        text-align: center;
+        position: relative;
+        top: 0px;
+    }
+
+    p {
+        color: #0f1318;
+        height: 76px;
+        position: relative;
+        top: 0;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px
+    }
+
+    #recordar_datos {
+        padding-right: 271px;
+    }
+
+    #recuperarPass {
+        color: #11273a;
+    }
+
+    #recuperar {
+        position: relative;
+        top: -65px;
+    }
+
+    .formLogin a:hover {
+        text-decoration: underline;
+    }
+
+    .user__data {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 14px;
+        text-align: center;
+        top: 10px;
+        align-items: center;
+
+        .controls {
+            width: 400px;
+            border: 1px red;
+            margin-bottom: 15px;
+            padding: 11px 10px;
+            padding-left: 34px;
+            background: #072d4d67;
+            color: white;
+
+            #user,
+            #password,
+            #email,
+            #confirm_password {
+                width: 100%;
+                text-align: justify;
+                background-color: transparent;
+                border: none;
+            }
+
+        }
+
+        #button_login {
+            text-align: center;
+        }
+
+        p {
+            text-decoration: none;
+        }
+
+        #icon_log {
+            position: absolute;
+            top: 10px;
+            left: 139px;
+        }
+
+        #icon_pass {
+            @extend #icon_log;
+            top: 78px
+        }
+
+        #icon_confirm_pass {
+            @extend #icon_log;
+            top: 150px
+        }
+
+        #icon_email {
+            @extend #icon_log;
+            top: 220px;
+        }
+    }
+}
+
+
+
+// Pagina Agenda
+.container__agenda {
+    background-color: rgb(179, 203, 206);
+    @include size(700px, 100%);
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 1.5em;
+    box-shadow: 0 0 20px 0 rgba(247, 247, 247, 0.3);
+    
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex: 1;
+
+    .containerCalendar {
+        text-align: center;
+        position: relative;
+        border-radius: 10px;
+
+        .calendar {
+            top: 155px;
+            position: relative;
+            background-color: transparent;
+            @include size(388px, 600px);
+            display: grid;
+
+            ol {
+                list-style: none;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                padding: 0;
+            }
+        }
+
+
+        .firsDay {
+            grid-column-start: 5;
+        }
+
+    }
+
+    .title_agenda,
+    .title_agenda_1 {
+        font-size: 40px;
+    }
+}
+
+
+.container_register {
+    .agenda_user .combobox {
+        width: 100px;
+    }
+
+    .agenda_user {
+        top: 155px;
+        position: relative;
+        @include size(388px, 600px);
+        // width: 600px;
+        // height: 388px;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+
+        .field_group {
+            position: relative;
+            width: 400px;
+        }
+
+        .input-field {
+            width: 100%;
+            outline: 0;
+            border: 1px solid gray;
+            border-radius: 3px;
+            padding-left: 60px;
+            background: transparent;
+            font-size: 1rem;
+            color: rgb(19, 16, 16);
+        }
+
+        .input-field:focus {
+            color: $blanco;
+            color: $blanco;
+            border-color: $blanco;
+        }
+
+        .input-field:focus~.icon {
+            color: $blanco;
+        }
+
+        .combobox__time,
+        .combobox__location {
+            @include size(40px, 400px);
+            // width: 400px;
+            // height: 40px;
+            background-color: transparent;
+            box-shadow: none;
+            border: 0 !important;
+            cursor: pointer;
+        }
+
+
+        .container__confirm {
+            position: relative;
+            left: 95px;
+            top: 36px;
+
+            .success-message {
+                display: none;
+            }
+        }
+    }
+
+    .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include size(100%, 60px);
+        // width: 60px;
+        // height: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        align-items: center;
+    }
+
+}
+
+
+// Termina estilos de agenda
+
+
+
+// Page Productos
+.container {
+    @include size(80vh, 80vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: scroll;
+
+    .header {
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+        text-transform: uppercase;
+        color: $gris;
+    }
+
+    .combo_ordernar {
+        @include size(30px, 150px);
+        position: relative;
+    }
+
+    .search_product {
+        display: flex;
+        justify-content: center;
+        border-radius: 1rem;
+
+        #id_search {
+            width: 400px;
+            text-align: center;
+            justify-items: center;
+            border-radius: 1rem;
+        }
+
+        #icon_search {
+            position: relative;
+            top: 5px;
+            left: 20px;
+        }
+
+    }
+
+    .products {
+        width: 100%;
+        align-self: center;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .product {
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.356);
+        @include size(100%, 350px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 20px 40px;
+        border-radius: 10px;
+        transition: .3s;
+
+        .image {
+            @include size(60%, 100%);
+            display: grid;
+            place-content: center;
+        }
+
+        .image img {
+            width: 240px;
+        }
+
+        .namePrice {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .namePrice h3 {
+            font-size: 2em;
+            text-transform: capitalize;
+            color: rgb(27, 27, 27);
+        }
+
+        .namePrice span {
+            font-size: 1.5em;
+            color: rgb(27, 27, 27);
+        }
+
+        .stars svg {
+            font-size: 1.3em;
+            color: green;
+        }
+
+        .button_comprar {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .button_comprar button {
+            padding: 10px 20px;
+            border-radius: 7px;
+            border: none;
+            background-color: rgba(240, 206, 137, 0.356);
+            color: ghostwhite;
+            font-size: 18px;
+            text-transform: capitalize;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        .button_comprar button:hover {
+            transform: scale(1.1);
+        }
+
+    }
+
+    .product:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+
+    .product p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+
+// Pagina Contacto
+
+.container_contact{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+    color: black;
+}
+
+.logo span {
+    color: #B70E21;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(10, 1, 1, 0.3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #fffefe;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #0f0202;
+    border-bottom: 1px solid #d63031;
+}
+
+.contact-form form button {
+    background: #B70E21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-info {
+    background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.footerContainer, .container_contact{
+    margin-top: 21px;
+}
+
+
+// No evaluar
+.notificacion {
+    display: none;
+    position: fixed;
+    top: 90px;
+    right: 10px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .notificacion.success {
+    background-color: #28a745;
+  }
+  
+  .cerrar {
+    float: right;
+    cursor: pointer;
+  }
+  
+  /* Estilos para animar la aparición de la notificación */
+  .notificacion.mostrar {
+    display: block;
+    animation: aparecer 0.5s ease;
+  }
+  
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+@import "partials/condicionales";
+@import "partials/bucles";
+@import "partials/queries";

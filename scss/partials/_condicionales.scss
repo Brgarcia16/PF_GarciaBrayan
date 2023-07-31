@@ -1,0 +1,28 @@
+$temporada: "shopSale";
+$login: "login";
+$shopSale: "shopSale";
+
+@if($temporada =="summer") {
+    .nav__container {
+        // opacity: 0.1;
+    }
+}
+
+
+@if($temporada =="#") {
+    .nav__container {
+        background-color: rgb(38, 53, 53);
+
+
+        #menu_mobile {
+            border-radius: 3rem;
+            background-color: rgb(42, 42, 56);
+        }
+        
+    }
+    .card-body {
+        ul #servicio_1 {
+            color: rgb(247, 247, 222);
+        }
+    }
+}

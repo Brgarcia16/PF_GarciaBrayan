@@ -1,0 +1,29 @@
+@mixin encabezados($tamanio) {
+    h1 {
+        font-size: $tamanio;
+    }
+
+    h2 {
+        font-size: $tamanio - 0.2;
+    }
+}
+
+@mixin queries($size) {
+    @media screen and (min-width:$size) {}
+}
+
+@mixin size($alto, $ancho) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin backgroundColorTransaction($gradientConfig) {
+    background: $gradientConfig;
+}
+
+// Con este metodo ajusto el contenedor nav mobile a las resoluciones pequeñas
+@mixin backgroundResolutionMobile($value1, $value3) {
+    @if $value1 == 360px {
+        padding-top: 20px;
+    }
+}
