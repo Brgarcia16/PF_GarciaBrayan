@@ -15,47 +15,51 @@
 </head>
 
 <body>
-    <div class="container__data">
-        <section>
-            <form action="./login.html" class="formLogin">
-                <h1>REGISTRARSE</h1>
-                <div class="user__data">
-                    <div class="controls">
-                        <i class="fa-solid fa-user" id="icon_log"></i>
-                        <label for="user"></label>
-                        <input type="text" name="user" id="user" placeholder="USUARIO">
-                    </div>
-                    <div class="controls">
-                        <i class="fa-solid fa-lock" id="icon_pass"></i>
-                        <label for="password"></label>
-                        <input type="password" name="password" id="password" placeholder="PASSWORD">
-                    </div>
+    <main>
+        <div class="container__data">
+            <section>
+                <form action="./login.html" class="formLogin">
+                    <h1>REGISTRARSE</h1>
+                    <div class="user__data">
+                        <div class="controls">
+                            <i class="fa-solid fa-user" id="icon_log"></i>
+                            <label for="user"></label>
+                            <input type="text" name="user" id="user" placeholder="USUARIO">
+                        </div>
+                        <div class="controls">
+                            <i class="fa-solid fa-lock" id="icon_pass"></i>
+                            <label for="password"></label>
+                            <input type="password" name="password" id="password" placeholder="PASSWORD">
+                        </div>
 
-                    <div class="controls">
-                        <i class="fa-solid fa-lock" id="icon_confirm_pass"></i>
-                        <label for="password"></label>
-                        <input type="password" name="password" id="confirm_password" placeholder="CONFIRMAR PASSWORD">
-                    </div>
+                        <div class="controls">
+                            <i class="fa-solid fa-lock" id="icon_confirm_pass"></i>
+                            <label for="password"></label>
+                            <input type="password" name="password" id="confirm_password"
+                                placeholder="CONFIRMAR PASSWORD">
+                        </div>
 
-                    <div class="controls">
-                        <i class="fa-sharp fa-solid fa-envelope" id="icon_email"></i>
-                        <label for="emailUser"></label>
-                        <input type="email" name="emailUser" id="email" placeholder="EMAIL">
+                        <div class="controls">
+                            <i class="fa-sharp fa-solid fa-envelope" id="icon_email"></i>
+                            <label for="emailUser"></label>
+                            <input type="email" name="emailUser" id="email" placeholder="EMAIL">
+                        </div>
+                        <div id="recordar_datos">
+                            <input type="checkbox" name="checkbox" id="check">
+                            <label for="Recordar">RECORDAR DATOS</label>
+                        </div>
+                        <div>
+                            <button class="buttons" type="submit">REGISTRAR</button>
+                        </div>
+                        <div class="cuentaExistente">
+                            <a href="../pages/login.html">¿Ya tienes tu cuenta?</a>
+                        </div>
                     </div>
-                    <div id="recordar_datos">
-                        <input type="checkbox" name="checkbox" id="check">
-                        <label for="Recordar">RECORDAR DATOS</label>
-                    </div>
-                    <div>
-                        <button class="buttons" type="submit">REGISTRAR</button>
-                    </div>
-                    <div class="cuentaExistente">
-                        <a href="../pages/login.html">¿Ya tienes tu cuenta?</a>
-                    </div>
-                </div>
-            </form>
-        </section>
-    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
 
 
 </body>

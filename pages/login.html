@@ -15,37 +15,38 @@
 </head>
 
 <body>
-    <div class="container__data">
-        <section>
-            <form action="../index.html" class="formLogin">
-                <h1>LOGIN</h1>
-                <div class="user__data">
-                    <div class="controls">
-                        <i class="fa-solid fa-user" id="icon_log"></i>
-                        <label for="user"></label>
-                        <input  type="text" name="user" id="user" placeholder="USUARIO">
+    <main>
+        <div class="container__data">
+            <section>
+                <form action="../index.html" class="formLogin">
+                    <h1>LOGIN</h1>
+                    <div class="user__data">
+                        <div class="controls">
+                            <i class="fa-solid fa-user" id="icon_log"></i>
+                            <label for="user"></label>
+                            <input type="text" name="user" id="user" placeholder="USUARIO">
+                        </div>
+                        <div class="controls">
+                            <i class="fa-solid fa-lock" id="icon_pass"></i>
+                            <label for="password"></label>
+                            <input type="password" name="pass" id="password" placeholder="PASSWORD">
+                        </div>
+                        <p id="recuperarMobile"><a href="registro.html">Registrarse</a></p>
+                        <div id="recordar_datos">
+                            <input type="checkbox" name="checkbox" id="check">
+                            <label for="Recordar">RECORDAR DATOS</label>
+                        </div>
+                        <div id="button_login">
+                            <button class="buttons" type="submit">LOGIN</button>
+                        </div>
+                        <p id="recuperarPass"><a href="#" class="recuperarPass">¿OLVIDASTE TU CONTRASEÑA?</a></p>
+                        <p id="recuperar">No tienes tu cuenta?<a href="../pages/registro.html"
+                                id="register">Registrarse</a></p>
                     </div>
-                    <div class="controls">
-                        <i class="fa-solid fa-lock" id="icon_pass"></i>
-                        <label for="password"></label>
-                        <input  type="password" name="pass" id="password" placeholder="PASSWORD">
-                    </div>
-                    <p id="recuperarMobile"><a href="registro.html">Registrarse</a></p>
-                    <div id="recordar_datos">
-                        <input type="checkbox" name="checkbox" id="check">
-                        <label for="Recordar">RECORDAR DATOS</label>
-                    </div>
-                    <div id="button_login">
-                        <button class="buttons" type="submit">LOGIN</button>
-                    </div>
-                    <p id="recuperarPass"><a href="#" class="recuperarPass">¿OLVIDASTE TU CONTRASEÑA?</a></p>
-                    <p id="recuperar">No tienes tu cuenta?<a href="../pages/registro.html" id="register">Registrarse</a></p>
-                </div>
-            </form>
-        </section>
-    </div>
-
-
+                </form>
+            </section>
+        </div>
+    </main>
 </body>
 
 </html>
